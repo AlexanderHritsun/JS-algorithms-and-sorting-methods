@@ -16,3 +16,14 @@ console.log(array1.join('-'));// string: 5-4-3-2-1
 
 let str1 = 'Test string with many words';
 console.log(str1.split(' ')); //['Test', 'string', 'with', 'many', 'words']
+
+//Find palindrome in the string
+let s = 'asdabawwwff';
+const isPalimExist = (s) => {
+    for (let i = 0; i < s.length - 1; i++){
+        if (s[i-1] === s[i + 1]){
+                return true;
+            }
+        } return false;
+    };
+console.log(isPalimExist(s));
