@@ -11,8 +11,8 @@ console.log(palindrome('redder')); //true
 console.log(palindrome('window')); //false
 
 const array1 = [1,2,3,4,5];
-console.log(array1.reverse());
-console.log(array1.join('-'));
+console.log(array1.reverse()); //[5,4,3,2,1]
+console.log(array1.join('-'));// string: 5-4-3-2-1
 
 let str1 = 'Test string with many words';
-console.log(str1.split(''));
+console.log(str1.split(' ')); //['Test', 'string', 'with', 'many', 'words']
