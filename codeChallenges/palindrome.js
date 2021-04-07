@@ -27,3 +27,14 @@ const isPalimExist = (s) => {
         } return false;
     };
 console.log(isPalimExist(s));
+
+
+/// Simplest version
+const isPolindrom = str => {
+    const lowerCased = str.toLowerCase();
+    const reversed = lowerCased.split('').reverse().join('');
+    return lowerCased === reversed;
+}
+
+console.log(isPolindrom('Dad'));
+console.log(isPolindrom('adflkjasdjklflkasd'));
