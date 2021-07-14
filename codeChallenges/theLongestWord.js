@@ -1,7 +1,7 @@
 const findLongestWord = string => {
     let theBiggestLength = 0;
     let biggestWord = null;
-    const stringsArray = string.split(/[\W, \d]/);
+    const stringsArray = string.split(/[\W, \d]/).filter(word => word !== '');
     console.info(stringsArray);
     stringsArray.forEach(word => {
         if(word.length > theBiggestLength) {
